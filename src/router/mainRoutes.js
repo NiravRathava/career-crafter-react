@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Signup from "../views/signup/signup";
+import Home from "../views/home/home"
 
-const AuthRoutes = () => {
+const MainRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/signup" element={<Signup />} />
+      <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );
 };
 
-export default AuthRoutes;
+export default MainRoutes;

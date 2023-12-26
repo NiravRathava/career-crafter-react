@@ -1,7 +1,7 @@
 import React from 'react'
 import AuthRoutes from '../router/authRoutes'
 
-const authLayout = () => {
+const AuthLayout = () => {
   return (
     <div className=''>
         <AuthRoutes/>
@@ -9,4 +9,4 @@ const authLayout = () => {
   )
 }
 
-export default authLayout
+export default AuthLayout

@@ -1,12 +1,15 @@
 import { NotificationContainer } from "react-notifications";
 import "./App.css";
 import LayoutRoutes from "./router/layoutRoutes";
-import 'react-notifications/lib/notifications.css';
+import "react-notifications/lib/notifications.css";
+import Container from '@mui/material/Container';
 function App() {
   return (
     <div className="App">
-      <NotificationContainer/>
-      <LayoutRoutes/>
+      {/* <Container maxWidth="xl" style={{backgroundColor:"red"}}> */}
+        <NotificationContainer />
+        <LayoutRoutes />
+      {/* </Container> */}
     </div>
   );
 }

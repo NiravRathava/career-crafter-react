@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Signup from "../views/signup/signup";
+
+import AuthLayout from "../layout/authLayout";
+import MainLayout from "../layout/mainLayout";
 
 const LayoutRoutes = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/authentication/signup" Component={Signup}></Route>
-          <Route path="/"></Route>
+          <Route path="/authentication/*" element={<AuthLayout />} />
+          <Route path="/*" element={<MainLayout />} />
         </Routes>
       </Router>
     </div>
