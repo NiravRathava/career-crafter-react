@@ -6,10 +6,10 @@ import Container from '@mui/material/Container';
 function App() {
   return (
     <div className="App">
-      {/* <Container maxWidth="xl" style={{backgroundColor:"red"}}> */}
+      <Container maxWidth="xl" style={{backgroundColor:"blue"}}>
         <NotificationContainer />
         <LayoutRoutes />
-      {/* </Container> */}
+      </Container>
     </div>
   );
 }
