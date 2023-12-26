@@ -21,12 +21,12 @@ const Home = () => {
           <SideMenu />
         </Grid>
       </Grid> */}
-      <Grid item xs={6} md={4} lg={3}>
-      <UserDetails style={{ marginBottom: "16px" }}/>
+      <Grid item sx={{ display: { xs: 'none', md: 'flex' } }}   md={3} lg={3}>
+      <UserDetails />
       <SideMenu />
 
       </Grid>
-      <Grid item xs={6} md={4} lg={9}>
+      <Grid item xs={12} md={9} lg={9}>
         <Post />
         <Post />
         <Post />
